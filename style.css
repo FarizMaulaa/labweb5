@@ -1,0 +1,114 @@
+/* body, header * {
+    margin: 0;
+    padding: 0;
+}
+header {
+    border: 1px solid #005fec;
+    background-color: #005fec;
+    color: white;
+    height: 50px;
+}
+body {
+    background-color: aliceblue;
+}
+header:hover {
+    color: #fffb06;
+    transition: 2s;
+}
+.logo {
+    float: left;
+    margin: 5px 0;
+}
+.link {
+    padding: 0 50px;
+}
+.link a {
+    float: right;
+    padding: 15px 10px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+} */
+
+
+/* Form */
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+header {
+    clear: both;
+    /* background-color: azure; */
+    width: auto
+    padding: 20px 50px;
+    /* border: 2px solid #2eef3d; */
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+    padding: 2px 15px;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 30vh;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 14px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control input {
+    clear: both0;
+    margin: 10px 0;
+}
+
+.form-control label {
+    clear: both;
+    margin-top: 20px 0;
+    font-size: 15px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

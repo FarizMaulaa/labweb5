@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Form Validation</title>
+  </head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  .wrap {
+    background-color: #f8f8ff;
+    width: 95vh;
+    border-radius: 8px;
+    box-shadow: 0 0 1em #cccccc;
+  }
+  form {
+    padding: 20px;
+  }
+  form > label {
+    font-size: medium;
+    font-weight: 600;
+  }
+  input {
+    width: 550px;
+    height: 40px;
+    border-radius: 4px;
+    border: transparent;
+    box-shadow: 0 0 3px #cccccc;
+    margin: 8px;
+  }
+  .button {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #008CBA;
+  opacity: 0.8;
+  border-radius: 5px;
+  
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  </style>
+  <body>
+    <h1>Form Validation</h1>
+    <div class="container">
+      <div class="wrap">
+        <form
+          name="formPendaftaran"
+          action="daftar.php"
+          method="post"
+          onsubmit="return validateForm()">
+          <label for="fname">Nama :</label><br>
+          <input 
+          type="text"
+          name="nama"
+          placeholder="Nama Lengkap"
+          required
+          maxlength="40"
+          minlength="3"><br>
+          <label for="lname">Email :</label><br>
+          <input 
+          type="email"
+          name="email"
+          placeholder="Email Aktif">
+          <label for="lname">Password :</label><br>
+          <input type="password" id="password" name="password" >
+          <label for="lname">Confirm Password :</label><br>
+          <input type="password" id="Cpassword" name="Cpassword" >
+          <button class="button" type="submit">Blue</button>
+        </form>
+        
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
