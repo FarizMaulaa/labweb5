@@ -1,15 +1,17 @@
 function validateForm() {
+  const nama = document.forms["formPendaftaran"]["nama"].value;
+  const email = document.forms["formPendaftaran"]["email"].value;
   const pw1 = document.forms["formPendaftaran"]["password"].value;
   const pw2 = document.forms["formPendaftaran"]["Cpassword"].value;
 
-  if (document.forms["formPendaftaran"]["nama"].value == "") {
+  if (nama == "") {
     alert("Nama Tidak Boleh Kosong");
-    document.forms["formPendaftaran"]["nama"].focus();
+    nama.focus();
     return false;
   }
-  if (document.forms["formPendaftaran"]["email"].value == "") {
+  if (email == "") {
     alert("Email Tidak Boleh Kosong");
-    document.forms["formPendaftaran"]["email"].focus();
+    email.focus();
     return false;
   }
   if (pw1 == pw2) {
